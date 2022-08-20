@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StockWarehouseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TradeVolume" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TradeValue" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OpeningPrice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HighestPrice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LowestPrice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ClosingPrice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Change" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TransactionValue" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateTime" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Gain" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Shock" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ForeignInvestment" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Investment" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Dealer" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StockGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Class" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StockType" Type="Boolean" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StockIndex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DayOfWeek" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DJI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DJI_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NASDAQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NASDAQ_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PHLX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PHLX_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MTX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MTX_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MTX_Open" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MTX_High" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TX_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TX_Open" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TX_High" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TAIEX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TAIEX_Open" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TAIEX_High" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ContinueName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Trend" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DJI_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NASDAQ_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PHLX_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MTX_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TX_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TAIEX_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TAIEX_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Financing" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Volume" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TPEx" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TPEx_QuoteChange" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TPEx_QuotePercent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MTX_Volume" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TX_Volume" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="JuridicaPerson" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StockInventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CloseStopLost" Type="Boolean" />
+    <Property Name="CloseHighStopLost" Type="Boolean" />
+    <Property Name="CloseABSStopLost" Type="Boolean" />
+    <Property Name="Type" Type="Boolean" />
+    <Property Name="Cost" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Defence" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Target" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SellAll" Type="Boolean" />
+    <Property Name="ClosePtLost" Type="Boolean" />
+    <Property Name="UpdateTime" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="StockWarehouseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Login" EntityType="Self.Login" />
+    <EntitySet Name="Stock" EntityType="Self.Stock" />
+    <EntitySet Name="StockGroup" EntityType="Self.StockGroup" />
+    <EntitySet Name="StockIndex" EntityType="Self.StockIndex" />
+    <EntitySet Name="StockInventory" EntityType="Self.StockInventory" />
+    <EntitySet Name="StockLineNotify" EntityType="StockWarehouseModel.StockLineNotify" />
+    <EntitySet Name="StockFutureCode" EntityType="StockWarehouseModel.StockFutureCode" />
+  </EntityContainer>
+  <EntityType Name="StockLineNotify">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Enable" Type="Boolean" />
+    <Property Name="Point" Type="Int32" />
+    <Property Name="PointBear" Type="Int32" />
+    <Property Name="Token" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NotifyClass" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StockFutureCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EnCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

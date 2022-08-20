@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StockWarehouseModelStoreContainer" CdmEntityContainer="StockWarehouseEntities">
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="StockWarehouseModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock">
+      <EntityTypeMapping TypeName="StockWarehouseModel.Stock">
+        <MappingFragment StoreEntitySet="Stock">
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="Investment" ColumnName="Investment" />
+          <ScalarProperty Name="ForeignInvestment" ColumnName="ForeignInvestment" />
+          <ScalarProperty Name="Shock" ColumnName="Shock" />
+          <ScalarProperty Name="Gain" ColumnName="Gain" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TradeVolume" ColumnName="TradeVolume" />
+          <ScalarProperty Name="TradeValue" ColumnName="TradeValue" />
+          <ScalarProperty Name="OpeningPrice" ColumnName="OpeningPrice" />
+          <ScalarProperty Name="HighestPrice" ColumnName="HighestPrice" />
+          <ScalarProperty Name="LowestPrice" ColumnName="LowestPrice" />
+          <ScalarProperty Name="ClosingPrice" ColumnName="ClosingPrice" />
+          <ScalarProperty Name="Change" ColumnName="Change" />
+          <ScalarProperty Name="TransactionValue" ColumnName="TransactionValue" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockGroup">
+      <EntityTypeMapping TypeName="StockWarehouseModel.StockGroup">
+        <MappingFragment StoreEntitySet="StockGroup">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="StockType" ColumnName="StockType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockIndex">
+      <EntityTypeMapping TypeName="StockWarehouseModel.StockIndex">
+        <MappingFragment StoreEntitySet="StockIndex">
+          <ScalarProperty Name="JuridicaPerson" ColumnName="JuridicaPerson" />
+          <ScalarProperty Name="TX_Volume" ColumnName="TX_Volume" />
+          <ScalarProperty Name="MTX_Volume" ColumnName="MTX_Volume" />
+          <ScalarProperty Name="TPEx_QuotePercent" ColumnName="TPEx_QuotePercent" />
+          <ScalarProperty Name="TPEx_QuoteChange" ColumnName="TPEx_QuoteChange" />
+          <ScalarProperty Name="TPEx" ColumnName="TPEx" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Financing" ColumnName="Financing" />
+          <ScalarProperty Name="TAIEX_QuotePercent" ColumnName="TAIEX_QuotePercent" />
+          <ScalarProperty Name="TAIEX_QuoteChange" ColumnName="TAIEX_QuoteChange" />
+          <ScalarProperty Name="TX_QuotePercent" ColumnName="TX_QuotePercent" />
+          <ScalarProperty Name="MTX_QuotePercent" ColumnName="MTX_QuotePercent" />
+          <ScalarProperty Name="PHLX_QuotePercent" ColumnName="PHLX_QuotePercent" />
+          <ScalarProperty Name="NASDAQ_QuotePercent" ColumnName="NASDAQ_QuotePercent" />
+          <ScalarProperty Name="DJI_QuotePercent" ColumnName="DJI_QuotePercent" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DayOfWeek" ColumnName="DayOfWeek" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DJI" ColumnName="DJI" />
+          <ScalarProperty Name="DJI_QuoteChange" ColumnName="DJI_QuoteChange" />
+          <ScalarProperty Name="NASDAQ" ColumnName="NASDAQ" />
+          <ScalarProperty Name="NASDAQ_QuoteChange" ColumnName="NASDAQ_QuoteChange" />
+          <ScalarProperty Name="PHLX" ColumnName="PHLX" />
+          <ScalarProperty Name="PHLX_QuoteChange" ColumnName="PHLX_QuoteChange" />
+          <ScalarProperty Name="MTX" ColumnName="MTX" />
+          <ScalarProperty Name="MTX_QuoteChange" ColumnName="MTX_QuoteChange" />
+          <ScalarProperty Name="MTX_Open" ColumnName="MTX_Open" />
+          <ScalarProperty Name="MTX_High" ColumnName="MTX_High" />
+          <ScalarProperty Name="TX" ColumnName="TX" />
+          <ScalarProperty Name="TX_QuoteChange" ColumnName="TX_QuoteChange" />
+          <ScalarProperty Name="TX_Open" ColumnName="TX_Open" />
+          <ScalarProperty Name="TX_High" ColumnName="TX_High" />
+          <ScalarProperty Name="TAIEX" ColumnName="TAIEX" />
+          <ScalarProperty Name="TAIEX_Open" ColumnName="TAIEX_Open" />
+          <ScalarProperty Name="TAIEX_High" ColumnName="TAIEX_High" />
+          <ScalarProperty Name="ContinueName" ColumnName="ContinueName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Trend" ColumnName="Trend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockInventory">
+      <EntityTypeMapping TypeName="StockWarehouseModel.StockInventory">
+        <MappingFragment StoreEntitySet="StockInventory">
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="ClosePtLost" ColumnName="ClosePtLost" />
+          <ScalarProperty Name="SellAll" ColumnName="SellAll" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Defence" ColumnName="Defence" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CloseStopLost" ColumnName="CloseStopLost" />
+          <ScalarProperty Name="CloseHighStopLost" ColumnName="CloseHighStopLost" />
+          <ScalarProperty Name="CloseABSStopLost" ColumnName="CloseABSStopLost" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockLineNotify">
+      <EntityTypeMapping TypeName="StockWarehouseModel.StockLineNotify">
+        <MappingFragment StoreEntitySet="StockLineNotify">
+          <ScalarProperty Name="NotifyClass" ColumnName="NotifyClass" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="PointBear" ColumnName="PointBear" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockFutureCode">
+      <EntityTypeMapping TypeName="StockWarehouseModel.StockFutureCode">
+        <MappingFragment StoreEntitySet="StockFutureCode">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="EnCode" ColumnName="EnCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

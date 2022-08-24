@@ -1,0 +1,7 @@
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\TestWeb.exe
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\TestWeb.dll
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\TestWeb.deps.json
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\TestWeb.runtimeconfig.json
+D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Release\net6.0\PubTmp\Out\TestWeb.pdb

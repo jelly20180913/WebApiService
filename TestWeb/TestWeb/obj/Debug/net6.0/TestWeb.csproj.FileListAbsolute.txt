@@ -24,8 +24,3 @@ D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\refint\TestWeb.dll
 D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\TestWeb.pdb
 D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\TestWeb.genruntimeconfig.cache
 D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\ref\TestWeb.dll
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\staticwebassets\msbuild.TestWeb.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\staticwebassets\msbuild.build.TestWeb.props
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TestWeb.props
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TestWeb.props
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\net6.0\staticwebassets.pack.json

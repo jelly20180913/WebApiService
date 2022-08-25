@@ -1,8 +1,0 @@
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.csproj.AssemblyReference.cache
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.GeneratedMSBuildEditorConfig.editorconfig
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.AssemblyInfoInputs.cache
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.AssemblyInfo.cs
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.csproj.CoreCompileInputs.cache
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.MvcApplicationPartsAssemblyInfo.cache
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.RazorAssemblyInfo.cache
-D:\Git\NetCore\Test\TestWeb\TestWeb\obj\Debug\netcoreapp3.1\TestWeb.RazorAssemblyInfo.cs
